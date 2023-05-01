@@ -10,8 +10,10 @@ print(set3)
 set3.add(10)
 set3.add(11)
 print(set3)
+### aryaliz, usamos tuplas, para enviar a string completa
 set3.update(('ola mundo', 'jonathan'))
 print(set3)
+### Funciona como pop
 set3.discard('ola mundo')
 print(set3)
 
