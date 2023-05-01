@@ -58,4 +58,9 @@ itemEscuro.update({
         'nome' : 'colgate-luminus-white-update-agora',
     }
 )
+### Outra forma de atualizar tambem
+itemEscuro.update(nome='jonathan', escola='verde')
+
+
+
 print(itemEscuro)
