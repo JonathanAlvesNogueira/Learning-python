@@ -1,13 +1,18 @@
 def imparpar(numero):
     if(numero % 2 == 0):
-        print(' par')
+        return print(' par')
     else:
-        print('é impar')
+       return print('é impar')
 
 def multiplicaNums(*args):
     total = 1
     for numeros in args:
         total *= numeros
+    return total
    
-multiplicaNums(1,2,3,4,5,6)
+variavel = multiplicaNums(1,2,3,4,5)
+epar = imparpar(variavel)
+print(epar)
+print(variavel)
+
 print('fim programa')
