@@ -38,3 +38,16 @@ print(pessoa.get('valor', 'nao existe'))
 ### Pop
 nome = pessoa.pop('nome')
 print(nome)
+print(pessoa) ### imprime pessoa (dictionary) sem a chave ('nome')
+
+
+
+### Usando popItem metodo
+itemEscuro = {
+    'escova' : 'azul',
+    'pasta' : 'colgate',
+}
+
+
+ultimaChaveDeletada = itemEscuro.popitem()
+print(ultimaChaveDeletada)
