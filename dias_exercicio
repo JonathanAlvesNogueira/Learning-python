@@ -1,0 +1,26 @@
+horas = 720 * 20
+print(horas)
+
+
+horario = 0
+minutos = 0
+horasCont = 0
+
+while horario <= horas:
+    minutos += 20
+    horario += 20
+    if(minutos == 60):
+        minutos = 0
+        horasCont += 1
+
+
+print(f'essa é a quantidade de horas{horasCont}')
+print(horasCont/24)
+print(horas)
+
+
+
+
+
+
+
