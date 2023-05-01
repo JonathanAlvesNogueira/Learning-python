@@ -51,3 +51,11 @@ itemEscuro = {
 
 ultimaChaveDeletada = itemEscuro.popitem()
 print(ultimaChaveDeletada)
+
+### usando o UPDATE cria ou altera uma chave
+itemEscuro.update({
+        'escova' : 'vermelho',
+        'nome' : 'colgate-luminus-white-update-agora',
+    }
+)
+print(itemEscuro)
