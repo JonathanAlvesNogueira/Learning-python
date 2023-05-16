@@ -10,3 +10,12 @@ arq2 = pd.read_excel('C:\\Users\\joth1\\Desktop\\python\\Aprendendo-python\\pyth
 arq_final= pd.concat([arq,arq1,arq2])
 
 print(arq_final.head(30))
+
+### verificando tipo de dados
+print('tipos de dados ')
+print(arq_final.dtypes)
+
+# verificando itens aleatorios 
+print
+
+
