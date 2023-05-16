@@ -26,3 +26,6 @@ print(arq_final)
 
 ### Retornando valor maximo da cep + 10
 print(arq_final['receita'].max())
+
+# pegando o minimo 
+print(arq_final['cep'].min())
