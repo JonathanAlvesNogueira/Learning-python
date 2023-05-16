@@ -20,12 +20,9 @@ print('tipo sample')
 print(arq_final.sample(10))
 
 ### Criando nova coluna
-print('criando nova coluna')
-arq_final['cep + 10'] = arq_final['cep'].sum(10) 
-print()
+arq_final['receita'] = arq_final[' cep'] + 10
+print(arq_final.columns)
 print(arq_final)
 
 ### Retornando valor maximo da cep + 10
-print('qual o valor maximo ?')
-print(arq_final['cep + 10'].max())
-
+print(arq_final['receita'].max())
