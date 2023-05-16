@@ -28,4 +28,4 @@ print(arq_final)
 print(arq_final['receita'].max())
 
 # pegando o minimo 
-print(arq_final['cep'].min())
+print(arq_final[' cep'].min())
