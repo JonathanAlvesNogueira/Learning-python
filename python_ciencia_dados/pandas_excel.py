@@ -19,4 +19,9 @@ print(arq_final.dtypes)
 print('tipo sample')
 print(arq_final.sample(10))
 
+### Criando nova coluna
+print('criando nova coluna')
+arq_final['cep + 10'] = arq_final[cep].sum(10) 
+print()
+print(arq_final)
 
