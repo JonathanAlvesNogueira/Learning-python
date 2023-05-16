@@ -34,3 +34,7 @@ print(arq_final[' cep'].min())
 ###Pegando as linhas com maior receitas
 print('maiores receitas')
 print(arq_final.nlargest(5, 'receita'))
+
+# pegando menos receitas
+print('menores receitas:')
+print(arq_final.nsmallest(3, 'receita'))
