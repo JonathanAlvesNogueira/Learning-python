@@ -16,6 +16,7 @@ print('tipos de dados ')
 print(arq_final.dtypes)
 
 # verificando itens aleatorios 
-print
+print('tipo sample')
+print(arq_final.sample(10))
 
 
