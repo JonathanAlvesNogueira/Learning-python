@@ -6,6 +6,18 @@ print(letras)
 numeros = list(range(10))
 print(numeros)
 
+### FATIAMENTO DE STRINGS 
 
+### pega 2 primeiras letras , lembrando que sempre sera o indice passado -1, exemplo pegará o indice [0,1]
+print(letras[:2])
+### pega restante das letras pegando o indice passado até o final 
+print(letras[2:])
+
+### PEGARÁ O INDICE [2,3]
+print(letras[2:4])
+### PUXA TODOS OS INDICES
+print(f' puxando todos os indices da lista {letras[::]}')
+### puxando todos os indices da lista ao contrario 
+print(f'Ao contrario {letras[::-1]}')
 
 
