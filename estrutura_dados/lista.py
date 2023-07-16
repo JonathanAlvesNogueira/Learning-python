@@ -25,4 +25,19 @@ print(f'Ao contrario {letras[::-1]}'); print()
 
 ### REVENDO ENUMERATE 
 for indice, objeto in enumerate(letras):
-    print(f'indice: {indice}    Esse é o objeto: {objeto }')
+    print(f'indice: {indice}    Esse é o objeto: {objeto }'); print()
+
+### FORMA DE COLOCAR ITENS EM UMA LISTA 
+    numeros = [1,2,3,4,5,6,7,8,9]
+    pares = []
+    for numero in numeros:
+        ### se for par 
+        if(numero % 2 == 0):
+            pares.append(numero)
+
+print(pares ); print()
+
+
+###  FORMA 2 DE COLOCAR ITENS EM UMA LISTA
+impares = [ numero for numero in numeros if numero % 2 != 0]
+print(impares )
