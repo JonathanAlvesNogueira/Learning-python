@@ -1,23 +1,28 @@
 ### Cria uma lista com  a string sendo a saida ['p', 'y', 't', 'h', 'o', 'n'] poi string é um elemento iteravel 
 letras = list("Python")
-print(letras)
+print(letras); print()
 
 ### Cria uma lista de 10 elementos sendo [0,1,2,3,4,5,6,7,8,9]
 numeros = list(range(10))
-print(numeros)
+print(numeros); print()
 
 ### FATIAMENTO DE STRINGS 
 
 ### pega 2 primeiras letras , lembrando que sempre sera o indice passado -1, exemplo pegará o indice [0,1]
-print(letras[:2])
+print(letras[:2]); print()
 ### pega restante das letras pegando o indice passado até o final 
-print(letras[2:])
+print(letras[2:]); print()
 
 ### PEGARÁ O INDICE [2,3]
-print(letras[2:4])
+print(letras[2:4]); print()
 ### PUXA TODOS OS INDICES
 print(f' puxando todos os indices da lista {letras[::]}')
 ### puxando todos os indices da lista ao contrario 
-print(f'Ao contrario {letras[::-1]}')
+print(f'Ao contrario {letras[::-1]}'); print()
 
 
+
+
+### REVENDO ENUMERATE 
+for indice, objeto in enumerate(letras):
+    print(f'indice: {indice}    Esse é o objeto: {objeto }')
