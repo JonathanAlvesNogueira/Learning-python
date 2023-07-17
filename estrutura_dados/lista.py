@@ -47,4 +47,24 @@ print(impares.clear()); print()
 
 ### copia valor da lista sem pegar o endereço de memoria 
 copia = pares.copy()
-print(f'id da copia: {id(copia)} id do par: {id(pares)} SÃO DIFERENTES ')
+print(f'id da copia: {id(copia)} id do par: {id(pares)} SÃO DIFERENTES '); print()
+
+
+### COUNT 
+cores = ['vermelho', 'azul', 'verde', 'verde']
+### RETORNA QUANTAS VEZE O ITEM APARECE NA LISTA 
+quant = cores.count('verde')
+print(f' quantidade de vezes que aparece a cor verde: {quant}'); print()
+
+### EXTEND JUNTA LISTA 
+lista1 = ['java', 'c']
+lista2 = ['python', 'c']
+lista1.extend(lista2)
+print(f' LISTAS DEPOIS DE SEREM JUNTADAS COM EXTEND : {lista1}'); print()
+
+
+### USANDO POP  ->    PILHA
+pilha = [1,2,3,4]
+print(f'elemento tirado {pilha.pop()}') # 4
+print(f'elemento tirado {pilha.pop()}') # 3
+print(f'elemento tirado {pilha.pop()}') # 2
