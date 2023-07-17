@@ -67,4 +67,24 @@ print(f' LISTAS DEPOIS DE SEREM JUNTADAS COM EXTEND : {lista1}'); print()
 pilha = [1,2,3,4]
 print(f'elemento tirado {pilha.pop()}') # 4
 print(f'elemento tirado {pilha.pop()}') # 3
-print(f'elemento tirado {pilha.pop()}') # 2
+print(f'elemento tirado {pilha.pop()}'); print()  # 2
+
+### USANDO INDEX 
+linguas = ['pt-br', 'us-en', 'arabe']
+print(linguas.index('pt-br')); print() # retorna o indice 0
+
+
+### Usando SORT
+
+alfa = ["Jonathan", "Delfi", "Zebra", "Golf", "Zé", "Alfa "]
+print(f' lista normal {alfa}')
+alfa.sort()
+### Organizando lista
+print(f' lista organizada : {alfa}'); print()
+
+### Lista reversa 
+alfa.sort(reverse=True)
+print(alfa); print()
+
+alfa.sort(key=lambda x : len(x) )
+print(f' Organizando por tamanho de letra {alfa}')
