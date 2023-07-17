@@ -41,3 +41,10 @@ print(pares ); print()
 ###  FORMA 2 DE COLOCAR ITENS EM UMA LISTA
 impares = [ numero for numero in numeros if numero % 2 != 0]
 print(impares )
+
+### LIMPA A LISTA
+print(impares.clear()); print()
+
+### copia valor da lista sem pegar o endereço de memoria 
+copia = pares.copy()
+print(f'id da copia: {id(copia)} id do par: {id(pares)} SÃO DIFERENTES ')
