@@ -23,4 +23,15 @@ print(pessoa['cidade']); print()
 pessoa['nome'] = 'Ana'
 pessoa['idade'] = 28
 pessoa['cidade'] = 'Rio de Janeiro'
-print(f'pessoa atualizada {pessoa }')
+print(f'pessoa atualizada {pessoa }'); print()
+
+
+### DICTONARY ANINHADO 
+print('DICTIONARY ANINHADO')
+person = {
+    'jonathan@gmail.com' : {'nome' : 'jonathan', 'idade': 19 },
+    'aninha@gmail.com' : {'nome' : 'ana' , 'idade' : 21},
+    'agata@gmail.com' : {'nome' : 'agata', 'idade' : 24}
+}
+
+print(person)
