@@ -88,3 +88,7 @@ print(alfa); print()
 
 alfa.sort(key=lambda x : len(x) )
 print(f' Organizando por tamanho de letra {alfa}')
+
+### Usando LEN 
+tamanho = len(alfa)
+print(f'Tamanho da lista: {tamanho}') # RETORNA O TAMANHO DA LISTA 
