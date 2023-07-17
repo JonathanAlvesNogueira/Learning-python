@@ -19,4 +19,8 @@ print(pessoa['nome'])
 print(pessoa['idade'])
 print(pessoa['cidade']); print()
 
-
+### Atualizando registros 
+pessoa['nome'] = 'Ana'
+pessoa['idade'] = 28
+pessoa['cidade'] = 'Rio de Janeiro'
+print(f'pessoa atualizada {pessoa }')
