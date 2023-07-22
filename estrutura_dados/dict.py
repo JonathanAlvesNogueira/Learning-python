@@ -23,7 +23,7 @@ print(pessoa['cidade']); print()
 pessoa['nome'] = 'Ana'
 pessoa['idade'] = 28
 pessoa['cidade'] = 'Rio de Janeiro'
-print(f'pessoa atualizada {pessoa }'); print()
+print(f'pessoa atualizada {pessoa }'); print('////////////////////////////////////////////////////////////////////////////')
 
 
 ### DICTONARY ANINHADO 
@@ -34,4 +34,6 @@ person = {
     'agata@gmail.com' : {'nome' : 'agata', 'idade' : 24}
 }
 
-print(person)
+for chave, valor in person.items():
+    print(chave, valor)
+print('////////////////////////////////////////////////////////////////////////'); print()
