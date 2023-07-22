@@ -33,7 +33,7 @@ person = {
     'aninha@gmail.com' : {'nome' : 'ana' , 'idade' : 21},
     'agata@gmail.com' : {'nome' : 'agata', 'idade' : 24}
 }
-
+# imprime chave valor COM O COMANDO ITEMS 
 for chave, valor in person.items():
     print(chave, valor)
 print('////////////////////////////////////////////////////////////////////////'); print()
