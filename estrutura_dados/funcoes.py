@@ -29,3 +29,14 @@ def valores(*, nome, idade, ano):
     return f'Informações do usuario: {nome}, {idade}, {ano}'
 print(valores(nome= 'Jonathan', idade=19, ano=2003))
 # print(valores('jonathan', 19, 2003)) INVALIDO
+
+
+# PASSANDO FUNÇÃO COMO PARAMETRO
+def soma(a, b):
+    return a + b
+
+def imprime_resultado(a,b, funcao):
+    resultado = funcao(a,b)
+    return(f'Esse é o resultado de {a} + {b} = {resultado}')
+
+print(imprime_resultado(1,2,soma))
