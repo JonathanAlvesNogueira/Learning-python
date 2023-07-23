@@ -23,33 +23,8 @@ print('Essa é o nome das colunas ')
 print(df.columns);print('______________________________')
 
 print('tipos de dados ')
-print(df.dtypes)
+print(df.dtypes); print('_____________________________________')
 
-
-### Escrevendo no arquivo excel
-
-nomes = []
-idades = []
-cidades = []
-
-nome = input('Digite um nome')
-idade = int(input('Digite uma idade'))
-cidade = input('Digite uma cidade')
-
-# PARA ADICIONAR O DATAFRAME PRECISA SER UMA LISTA 
-nomes.append(nome)
-idades.append(idade)
-cidades.append(cidade)
-
-
-dados = {
-    'nome' : nomes,
-    'idade' : idades,
-    'cidade' : cidades
-}
-# Criar um DataFrame com os dados
-df2 = pd.DataFrame(dados)
-# Escrever o DataFrame no arquivo Excel
-rota = "C:/Users/joth1/Documents/arquivo_excel.xlsx"
-df2.to_excel(rota, index=False)
+#puxa o  ultimos registros/linhas 
+print(df.tail(3))
 
