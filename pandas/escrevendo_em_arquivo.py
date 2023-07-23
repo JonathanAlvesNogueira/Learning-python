@@ -22,17 +22,32 @@ cidades = []
 
 while(True):
     continua = input('Quer continuar digite qualquer tecla, quer sair digite 9')
-    if(continua != 9 ):
+    if(continua != '9' ):
         nome = input('digite um nome')
         idade = input('digite um idade')
         cidade = input('digite uma cidade')
         nomes.append(nome)
         idades.append(idade)
         cidades.append(cidade)
+    else: 
+        break
+try:
+    novos_dados = {
+        "Nome" : nomes,
+        "Idade" : idades,
+        "Cidades" : cidades
+    }
 
-novos_dados = {
-    "Nome" : nomes,
-    "Idade" : idade,
-    "Cidades" : cidade
+    df_novo = pd.DataFrame(novos_dados)
 
-}
+ # Adicionar os novos dados ao DataFrame principal
+    df = pd.concat([df, df_novo], ignore_index=True)
+
+    # Salvar o DataFrame atualizado no arquivo Excel
+    df.to_excel(rota, index=False)
+
+    print("Dados atualizados:")
+    print(df)
+    print(f'Dados gravados com sucesso no arquivo Excel: {rota}')
+except Exception:
+    print('Erro de processamento')
