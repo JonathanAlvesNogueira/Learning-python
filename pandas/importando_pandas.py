@@ -13,3 +13,8 @@ df = pd.read_excel(caminho_arquivo)
 df = df.rename(columns={'nome': 'names', 'Ano':'Years'})
 # Exibir as 5 primeiras linhas do DataFrame
 print(df.head(5))
+
+
+# exibe as linhas e colunas
+print(); print('Essa é a quantidade de linhas e colunas ')
+print(df.shape)
