@@ -25,6 +25,8 @@ print(df.columns);print('______________________________')
 print('tipos de dados ')
 print(df.dtypes); print('_____________________________________')
 
-#puxa o  ultimos registros/linhas 
-print(df.tail(3))
+#puxa as 3 ultimos registros/linhas 
+print(df.tail(3)); print('______________')
 
+# traz a media da coluna, uma contagem das linhas, desvio padrao, valor minimo, traz os quartis(25%, 50%, 75%, 100%) eo valor maximo 
+print(df.describe())
