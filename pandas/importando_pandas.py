@@ -1,7 +1,8 @@
 import pandas as pd
 
 # Substitua 'dados.xlsx' pelo caminho completo do seu arquivo Excel, usando barras invertidas.
-caminho_arquivo = ('C:\\Users\\joth1\\Downloads\\dados.xlsx')  # Usando barras invertidas
+caminho_arquivo = ('C:/Users/joth1/Documents/arquivo_excel.xlsx')
+
 
 # Substituir as barras invertidas por barras normais
 caminho_arquivo = caminho_arquivo.replace("\\", "/")
@@ -29,4 +30,7 @@ print(df.dtypes); print('_____________________________________')
 print(df.tail(3)); print('______________')
 
 # traz a media da coluna, uma contagem das linhas, desvio padrao, valor minimo, traz os quartis(25%, 50%, 75%, 100%) eo valor maximo 
-print(df.describe())
+print(df.describe()); print('_____________')
+
+# puxa as linhas da coluna nome, e o unique especifica que so quer os registros unicos, se tiver 2 jonathan trara so um
+print(df['Nome'].unique())
