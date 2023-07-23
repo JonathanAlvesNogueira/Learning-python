@@ -16,5 +16,12 @@ print(df.head(5))
 
 
 # exibe as linhas e colunas
-print(); print('Essa é a quantidade de linhas e colunas ')
+print('Essa é a quantidade de linhas e colunas ');print('__________________________')
 print(df.shape)
+
+print('Essa é o nome das colunas ')
+print(df.columns);print('______________________________')
+
+print('tipos de dados ')
+print(df.dtypes)
+
