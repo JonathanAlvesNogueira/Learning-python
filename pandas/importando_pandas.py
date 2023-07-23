@@ -35,6 +35,9 @@ print(df.describe()); print('_____________')
 # puxa as linhas da coluna nome, e o unique especifica que so quer os registros unicos, se tiver 2 jonathan trara so um
 print(df['Nome'].unique()); print('__________________')
 
-# faz uma lista de elementos onde a coluna seja igual Jonathan 
+# faz uma lista de todas as colunas elementos onde a coluna seja igual Jonathan 
 name = df.loc[df['Nome'] == 'jonathan']
-print(name.head())
+print(name.head()); print('_________________')
+
+# separa por grupos de cidades por nome contando os registros unicos
+print(df.groupby('Nome')['Nome'].nunique())
