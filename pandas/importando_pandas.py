@@ -33,4 +33,8 @@ print(df.tail(3)); print('______________')
 print(df.describe()); print('_____________')
 
 # puxa as linhas da coluna nome, e o unique especifica que so quer os registros unicos, se tiver 2 jonathan trara so um
-print(df['Nome'].unique())
+print(df['Nome'].unique()); print('__________________')
+
+# faz uma lista de elementos onde a coluna seja igual Jonathan 
+name = df.loc[df['Nome'] == 'jonathan']
+print(name.head())
