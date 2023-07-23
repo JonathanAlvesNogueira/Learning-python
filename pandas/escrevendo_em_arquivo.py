@@ -1,8 +1,13 @@
 #importa pandas
 import pandas as pd 
+import os as os
+import pygetwindow as gw
+
 
 #Especifica o caminho 
 rota = "C:/Users/joth1/Documents/arquivo_excel.xlsx"
+excel_window = gw.getWindowsWithTitle("Excel")[0]
+excel_window.close()
 
 # Verificar se o arquivo Excel já existe
 try:
@@ -49,5 +54,6 @@ try:
     print("Dados atualizados:")
     print(df)
     print(f'Dados gravados com sucesso no arquivo Excel: {rota}')
+    os.startfile(rota)
 except Exception:
     print('Erro de processamento')
