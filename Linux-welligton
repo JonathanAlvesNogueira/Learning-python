@@ -1,0 +1,30 @@
+
+Livro:  https://docs.google.com/document/d/14S8MAcjspdbBWsja-Ijb_GQfs4C1PzJmDcTJ3bYXyeQ/edit?usp=sharing9  
+
+\\10.68.76.77
+baixar a ISO fazer sua própria maquina virtual debian 12.
+1.3
+1.4
+1.5
+1.6
+1.7
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Atualizei o aied no debian e agora da o erro:
+Terminate called after throwing an instance of 'Json::LogicError'
+   what(): in Json::Value::asCString(): requires stringValue
+:(
+Reinstalei o Aied e deu certo, tamo together 👍
+Talvez tenha dado esse erro porque eu simplesmente dei "sudo aied update", acho que era para ter feito sem o sudo.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+t: https://drive.google.com/file/d/1siqo6Yehq4_Nofq2s56_dXJQt71qrgnl/view
+vm: https://drive.google.com/file/d/17WPj3UJjJLtykcu-VMEYHw9YP3PRFCKJ/view?usp=drive_link
+
+
+CADASTRO: 
+http://www.universidadegratuitaead.com.br/aied/pages/login.php
+
+SUDO
+https://docs.google.com/document/d/13DznVvEF1AddGSVdXW-U3fx8qmeO_t8u2wgisP7bHio/edit?usp=sharing
